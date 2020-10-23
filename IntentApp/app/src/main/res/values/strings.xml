@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IntentApp</string>
+    <string name="move_activity">Pindah Activity</string>
+    <string name="move_activity_with_data">Pindah Activity dengan Data</string>
+    <string name="call_number">Telpon Sebuah Nomor</string>
+    <string name="this_move_activity">Ini adalah Move Activity</string>
 </resources>
