@@ -13,7 +13,7 @@ This is my learning journey of android, i will add new app and some note in this
     - I Learn some layout like, LinearLayout, TableLayout, RelativeLayout and ScrollView
 4. Pahlawan App
     ![](assets-markdown/pahlawan-app1.png) ![](assets-markdown/pahlawan-app2.png) ![](assets-markdown/pahlawan-app3.png)
-    - I Learn how to use RecyclerView, Using adapter, List View, Grid View, and Card View
+    - I Learn How to use Recyclerview, Make an Adapter, Class Model, GridView and CardView
 5. Name Search
     ![](assets-markdown/name-search.png)
     - I Learn how to use AutoCompleteTextView
