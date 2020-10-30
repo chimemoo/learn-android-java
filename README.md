@@ -3,7 +3,7 @@ This is my learning journey of android, i will add new app and some note in this
 
 ## Changelog
 1. Bar Volume
-    ![](assets-markdown/bar-volume.png)
+    <img src="assets-markdown/bar-volume.png" alt="drawing" width="200"/>
     - I Learn how to add component, getting value and setting value
 2. Intent App
     ![](assets-markdown/intent-app.png)
