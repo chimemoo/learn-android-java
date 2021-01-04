@@ -2,19 +2,21 @@
 This is my learning journey of android, i will add new app and some note in this repository. 
 
 ## Changelog
-1. Bar Volume
-    ![](assets-markdown/bar-volume.png)
+1. Bar Volume <br>
+    <img src="assets-markdown/bar-volume.png" width="200"/>
     - I Learn how to add component, getting value and setting value
-2. Intent App
-    ![](assets-markdown/intent-app.png)
+2. Intent App <br>
+    <img src="assets-markdown/intent-app.png" width="200"/>
     - I Learn how to make activity, android lifecycle, intent implicit & explicit
-3. Smartphone Spec
-    ![](assets-markdown/smartphone-spec.png)
+3. Smartphone Spec <br>
+    <img src="assets-markdown/smartphone-spec.png" alt="drawing" width="200"/>
     - I Learn some layout like, LinearLayout, TableLayout, RelativeLayout and ScrollView
-4. Pahlawan App
-    ![](assets-markdown/pahlawan-app1.png) ![](assets-markdown/pahlawan-app2.png) ![](assets-markdown/pahlawan-app3.png)
+4. Pahlawan App <br>
+    <img src="assets-markdown/pahlawan-app1.png" alt="drawing" width="200"/>
+    <img src="assets-markdown/pahlawan-app2.png" alt="drawing" width="200"/>
+    <img src="assets-markdown/pahlawan-app3.png" alt="drawing" width="200"/>
     - I Learn How to use Recyclerview, Make an Adapter, Class Model, GridView and CardView
-5. Name Search
-    ![](assets-markdown/name-search.png)
+5. Name Search <br>
+    <img src="assets-markdown/name-search.png" alt="drawing" width="200"/>
     - I Learn how to use AutoCompleteTextView
     - Using Adapter
