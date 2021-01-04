@@ -20,3 +20,7 @@ This is my learning journey of android, i will add new app and some note in this
     <img src="assets-markdown/name-search.png" alt="drawing" width="200"/>
     - I Learn how to use AutoCompleteTextView
     - Using Adapter
+6. Breaking Bad API <br>
+    <img src="assets-markdown/breaking-bad-app.png" alt="drawing" width="200"/>
+    - I Learn how to using Retrofit for fetch data from api
+    - Passing response api data to grid view

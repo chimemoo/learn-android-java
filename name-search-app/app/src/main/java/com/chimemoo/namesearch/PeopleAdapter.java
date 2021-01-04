@@ -41,7 +41,7 @@ public class PeopleAdapter extends ArrayAdapter<People> {
         if(people != null){
             TextView lblName = (TextView) view.findViewById(R.id.tv_name);
             if (lblName != null)
-                lblName.setText(people.getFirstName());
+                lblName.setText(people.getName());
         }
         return view;
     }
@@ -55,7 +55,7 @@ public class PeopleAdapter extends ArrayAdapter<People> {
     Filter nameFilter = new Filter() {
         @Override
         public CharSequence convertResultToString(Object resultValue) {
-            String str = ((People) resultValue).getFirstName();
+            String str = ((People) resultValue).getName();
             return str;
         }
 
@@ -64,7 +64,7 @@ public class PeopleAdapter extends ArrayAdapter<People> {
             if(constraint != null){
                 suggestions.clear();
                 for (People people : tempItems){
-                    if(people.getFirstName().toLowerCase().contains(constraint.toString().toLowerCase())){
+                    if(people.getName().toLowerCase().contains(constraint.toString().toLowerCase())){
                         suggestions.add(people);
                     }
                 }
