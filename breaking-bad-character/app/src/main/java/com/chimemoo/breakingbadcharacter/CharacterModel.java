@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class CharacterModel {
+public class CharacterModel  {
 
     @SerializedName("char_id")
     @Expose
