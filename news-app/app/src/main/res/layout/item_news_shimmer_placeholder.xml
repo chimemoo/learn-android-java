@@ -15,25 +15,24 @@
             android:id="@+id/iv_news"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="#ddd"
-            android:scaleType="fitXY"/>
+            android:background="#ddd"/>
 
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:textSize="24sp"
+            android:height="20dp"
             android:textColor="@color/black"
-            android:text="TITLE"/>
+            android:background="@color/gray"/>
 
         <TextView
             android:id="@+id/tv_content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_marginTop="5dp"
             android:textSize="14sp"
-            android:text="Lorem Ipsum"/>
+            android:background="@color/gray"/>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

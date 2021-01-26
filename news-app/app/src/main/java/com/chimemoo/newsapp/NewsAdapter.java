@@ -34,7 +34,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ListViewHolder
 
         Glide.with(holder.itemView.getContext())
                 .load(news.getUrlToImage())
-                .apply(new RequestOptions().override(200, 50))
+                .apply(new RequestOptions().override(800, 400))
+                .fitCenter()
                 .into(holder.ivNews);
 
         holder.tvTitle.setText(news.getTitle());

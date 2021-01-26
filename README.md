@@ -34,3 +34,8 @@ This is my learning journey of android, i will add new app and some note in this
     - I learn how to using Intro App library for making onboard on application
     - I Learn how to making simple thread
 8. News App (On Progress) <br>
+    <img src="assets-markdown/news-app1.png" alt="drawing" width="200"/>
+    <img src="assets-markdown/news-app2.png" alt="drawing" width="200"/>
+    - I Learn how to use CardView
+    - Implementing Interceptor for logging
+    - Using Shimmer Layout

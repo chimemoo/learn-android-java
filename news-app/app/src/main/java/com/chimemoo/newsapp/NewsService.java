@@ -5,7 +5,7 @@ import retrofit2.http.GET;
 
 public interface NewsService {
 
-    @GET("v2/top-headlines?country=us&apiKey=6f711c0871524df9bd47c6333402abca")
+    @GET("v2/top-headlines?country=id&apiKey=6f711c0871524df9bd47c6333402abca")
     Call<NewsResponseModel> newsHeadline();
 
 }
