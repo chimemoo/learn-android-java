@@ -24,6 +24,13 @@ This is my learning journey of android, i will add new app and some note in this
     <img src="assets-markdown/breaking-bad-app.png" alt="drawing" width="200"/>
     <img src="assets-markdown/breaking-bad-app-1.png" alt="drawing" width="200"/>
     - I Learn how to using Retrofit for fetch data from api
-    - Passing response api data to grid view
+    - Passing response api data to adapter and to grid view
     - Using Progress Bar
     - Using SwipeRefresh Layout
+7. Onboard App<br>
+    <img src="assets-markdown/onboard-app1.png" alt="drawing" width="200"/>
+    <img src="assets-markdown/onboard-app2.png" alt="drawing" width="200"/>
+    <img src="assets-markdown/onboard-app3.png" alt="drawing" width="200"/>
+    - I learn how to using Intro App library for making onboard on application
+    - I Learn how to making simple thread
+8. News App (On Progress) <br>
