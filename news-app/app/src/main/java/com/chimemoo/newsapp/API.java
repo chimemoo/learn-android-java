@@ -5,7 +5,7 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class API {
+public class  API {
 
     public static final String BASE_URL = "https://newsapi.org/";
     private static Retrofit retrofit = null;

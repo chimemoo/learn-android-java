@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -16,6 +17,31 @@ import java.util.List;
 
 public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ListViewHolder> {
     private List<NewsModel> listNews;
+    private ClickInterface mClickInterface;
+
+    public interface ClickInterface {
+        void clickEvent(NewsModel obj);
+    }
+
+    public void setClickInterface(ClickInterface clickInterface){
+        mClickInterface = clickInterface;
+    }
+
+    private class NewsClickListener implements View.OnClickListener {
+        private int mPosition;
+        private boolean mClickable;
+
+        void setPosition(int position) { mPosition = position; }
+        void setClickable(boolean clickable) { mClickable = clickable; }
+
+        @Override
+        public void onClick(View v) {
+            if(mClickable) {
+                mClickInterface.clickEvent(listNews.get(mPosition));
+            }
+        }
+    }
+
 
     public NewsAdapter(List<NewsModel> listNews) {
         this.listNews = listNews;
@@ -40,6 +66,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ListViewHolder
 
         holder.tvTitle.setText(news.getTitle());
         holder.tvContent.setText(news.getDescription());
+        holder.newsClickListener.setClickable(true);
+        holder.newsClickListener.setPosition(position);
+
     }
 
     @Override
@@ -50,6 +79,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ListViewHolder
     public class ListViewHolder extends RecyclerView.ViewHolder {
         ImageView ivNews;
         TextView tvTitle, tvContent;
+        LinearLayout llNews;
+        NewsClickListener newsClickListener;
 
         public ListViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -57,6 +88,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ListViewHolder
             ivNews = itemView.findViewById(R.id.iv_news);
             tvTitle = itemView.findViewById(R.id.tv_title);
             tvContent = itemView.findViewById(R.id.tv_content);
+            llNews = itemView.findViewById(R.id.ll_news);
+            newsClickListener = new NewsClickListener();
+            llNews.setOnClickListener(newsClickListener);
         }
     }
 }

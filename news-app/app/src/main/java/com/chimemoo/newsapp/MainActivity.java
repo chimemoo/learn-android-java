@@ -5,9 +5,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
 
@@ -18,6 +20,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
+
+    public static String NEWS_URL = "NEWS_URL";
 
     NewsService newsService;
     List<NewsModel> listNews;
@@ -66,6 +70,13 @@ public class MainActivity extends AppCompatActivity {
                 newsAdapter = new NewsAdapter(listNews);
                 rvNews.setAdapter(newsAdapter);
                 newsAdapter.notifyDataSetChanged();
+                newsAdapter.setClickInterface(obj -> {
+                    NewsModel newsModel = obj;
+
+                    Intent intent = new Intent(MainActivity.this, ViewNewsActivity.class);
+                    intent.putExtra(NEWS_URL, obj.getUrl());
+                    startActivity(intent);
+                });
                 swipeRefreshLayout.setRefreshing(false);
             }
 
